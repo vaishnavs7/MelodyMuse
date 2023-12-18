@@ -1,0 +1,59 @@
+/* Set a fixed size for the popup */
+body {
+    width: 300px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden; /* Hide content that exceeds the fixed size */
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+  
+  #recommendation-container {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    overflow: auto; /* Enable scrolling if content exceeds the fixed size */
+  }
+  
+  /* Additional styles for the recommendation content */
+  /* Adjustments for track names and sizing */
+.track {
+    max-width: 90%; /* Limit the width of each track */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Show ellipsis for truncated text */
+    margin: 10px 0;
+    transition: all 0.3s ease; /* Smooth transition for hovering effect */
+  
+    /* Set common size for all tracks */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .track:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+  }
+  
+  /* Add scrolling effect to track names */
+  .track p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Styles for the "Show Recommendation" button */
+ /* Styles for the "Show Recommendation" button */
+#show-recommendation-btn {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Added margin at the bottom */
+    width: 150px;
+  }
